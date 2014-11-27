@@ -1,0 +1,87 @@
+<!DOCTYPE html >
+
+<html lang="en">
+
+    <head>
+        <title>jQuery Switchable</title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        
+        <meta name="description" content="Creates an iPhone style switch button." >
+        <meta name="keywords" content="website,webapp,app,site,jquery,plugin,switch,input,inputcheck,check box" >
+        
+        <!-- STYLES -->
+		<link rel="stylesheet" type="text/css" href="css/sample.css" >
+		<link rel="stylesheet" type="text/css" href="../src/switchable.css" />
+		
+    </head>
+    
+    <body>
+        
+        <header >
+            <div class="wrapper" >
+                <h1 class="step-4">Switchable Plugin, for jQuery</h1>
+
+                <p >
+                    Creates an iPhone style switch button for input checkbox.
+                </p>
+            </div>
+        </header>
+        
+        <section class="" >
+            
+            <div class="wrapper">
+
+                <p class="small-font">
+                    Open-source plugin under MIT license. Written by Rogério Taques. <br >
+                    Docs an other available at: <a href="https://github.com/rogeriotaques/switchable" >https://github.com/rogeriotaques/switchable</a>
+                </p> <br >
+                
+                <div class="well">
+                    
+                    <div  >
+                        <input type="checkbox" id="myswitch" checked value="checked" data-label="This is a live demo" >
+                    </div> <br >
+                    
+                    <p >Click to switch it on|off</p>
+                    
+                    
+                </div> <br >
+                
+                <h2 >Other nice stuff you should see</h2>
+                
+                <p >
+                    You'll find other nice stuff in my Github. <br >
+                    <a href="https://github.com/rogeriotaques" >https://github.com/rogeriotaques</a>
+                </p> 
+                
+                <br >
+                
+                <p >
+                    Feel free to contribute.
+                </p> 
+
+            </div>
+        
+        </section>
+    
+		<footer >
+            <div class="wrapper" >            
+                <p >&copy; 2014, Rogério Taques.</p>
+            </div>
+		</footer>
+		
+        <!-- SCRIPTS GOES HERE ... -->
+		
+		<script type="text/javascript" src="js/jquery.1.7.1.js"></script>
+		<script type="text/javascript" src="../src/switchable.min.js"></script>
+		
+		<script type="text/javascript" >
+			$(document).ready(function(){
+				$('#myswitch').switchable();
+			});
+		</script>
+        
+    </body>
+    
+</html>

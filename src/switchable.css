@@ -1,0 +1,59 @@
+.switchable-holder {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 36px;
+	height: 26px;
+	border-radius: 999px;
+	background-color: #d8d9db;
+	margin: 0 10px 0 0;
+	-webkit-transition: background-color cubic-bezier(.25, .46, .45, .94) .2s;
+	-moz-transition: background-color cubic-bezier(.25, .46, .45, .94) .2s;
+	transition: background-color cubic-bezier(.25, .46, .45, .94) .2s;
+	float: left;
+}
+
+.switchable-wrapper .switchable-label {
+	float: left;
+	margin: 0 10px 0 0;
+	height: 26px;
+	line-height: 26px;
+	font-weight: 800;
+}
+
+.switchable-wrapper .switchable-label:after,
+.switchable-wrapper .switchable-label:before {
+	box-sizing: none !important;
+}
+
+.switchable-holder .switchable-switcher {
+	margin: 1px 1px 0;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background-color: #fff;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	transition-property: transform;
+	-webkit-transition-duration: .2s;
+	-moz-transition-duration: .2s;
+	transition-duration: .2s;
+	-webkit-transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+	-moz-transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+	transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+	cursor: pointer;
+	box-shadow: #888 1px 1px 4px;
+}
+
+.switchable-holder.switchable-checked {
+	border-color: #4cd864;
+	background-color: #4cd864
+}
+
+.switchable-holder.switchable-checked .switchable-switcher {
+	-webkit-transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	-ms-transform: translateX(10px);
+	-o-transform: translateX(10px);
+	transform: translateX(10px)
+}

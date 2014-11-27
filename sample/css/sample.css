@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+    font-family: "Calibri", "Myriad Pro", Arial, sans-serif;
+	font-size: 20px;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid #666;
+    box-shadow: inset 0px -2px 2px #888;
+}
+
+header h1 {
+    margin: 10px;
+    color: yellowgreen;
+}
+
+header p {
+    font-size: 11pt;  
+    line-height: 18px;
+}
+
+section {
+    background: url('../images/bg.png') repeat fixed top left #CCC;
+    color: #444;
+    text-shadow: white 1px 1px 1px;
+}
+
+section a {
+    color: blue;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: none;
+}
+
+footer {
+    font-size: 11pt;
+    border-top: 1px solid #666;
+    box-shadow: inset 0px 2px 2px #888;
+}
+
+p {
+    line-height: 25px;
+    margin: 5px;
+}
+
+a {
+	color: yellowgreen;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.well {
+    margin: 20px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 20px;
+    background: #FFF;
+}
+
+dl {
+    margin: 20px 40px;
+}
+
+dt {
+    font-weight: 800;
+    border: 1px solid #666;
+    padding: 5px 10px;
+    background: #AAA;
+    color: white;
+    text-shadow: none;
+}
+
+dt:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+dd {
+    font-size: 12pt;
+    padding: 5px 20px 10px;
+    border: 1px solid #666;
+    border-top: none;
+    box-shadow: inset 0px 2px 2px #BBB;
+}
+
+dd:not(:last-child) {
+    border-bottom: none;
+}
+
+dd:last-child {
+    border-radius: 0 0 5px 5px;
+}

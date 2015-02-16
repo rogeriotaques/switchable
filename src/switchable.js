@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  * @requires jQuery v1.9 or above
- * @version 1.0
+ * @version 1.1
  * @cat Plugins/Form Validation
  * @author Rogério Taques (rogerio.taques@gmail.com)
  * @see https://github.com/rogeriotaques/switchable
@@ -49,7 +49,7 @@
 		//    #FFF, rgb(255,255,255), rgba(255,255,255, 0.5) or white
 		checked_color: null,
 		
-		// indicates wheter the widget is readyonly
+		// indicates wheter the widget is readonly
 		// possible values: true/false. default is false.
 		readonly: false,
 			
@@ -108,7 +108,7 @@
 					_setCustomColor( switcher, me.is(':checked'), o );
 				}
 				
-				if (! o.readyonly)
+				if (! o.readonly)
 				{
 				
 					button.on('click', function(e){
@@ -125,12 +125,14 @@
 						
 						if (o.click && $.isFunction(o.click))
 						{
+							e.switcher = me;
 							return o.click(e, me.is(':checked'));
 						}
 					});
 				}
 				else
 				{
+                    switcher.addClass('switchable-readonly');
 					button.css({'cursor': 'not-allowed'});
 				}
 				

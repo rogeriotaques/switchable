@@ -76,3 +76,20 @@ The callback function will receive the following parameters:
   * event, 
   * boolean (that indicates if it's checked)
   
+The referred element (this) is available inside the event object, named as 'switcher'. So, if you need to retrieve the clicked switchable element, you just need to use the following code:
+
+```
+	<script type="text/javascript" >
+	  $(document).ready(function(){
+	    $('#myswitch').switchable({
+            click: function( ev, checked )
+            {
+                console.log( ev.switcher.attr('id') );
+            }
+        });
+	  });
+	</script>
+
+```
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rogeriotaques/switchable/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
